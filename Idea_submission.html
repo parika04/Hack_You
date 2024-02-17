@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idea Submission Hub | Invenshop</title>
+  <link rel="stylesheet" href="Idea_submission.css">
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="container">
+    <h1>Idea Submission Hub</h1>
+    <p>A centralized hub for submitting ideas, solutions, and challenges, accessible to all participants within the organization and beyond.</p>
+  </div>
+</section>
+
+<section class="submission">
+  <div class="container">
+    <h2>Submit Your Idea</h2>
+    <form action="#" method="post" class="submission-form" onsubmit="showPopup(event)">
+
+      <div class="form-group">
+        <label for="idea-name">Title of Idea:</label>
+        <input type="text" id="idea-name" name="idea-name" required placeholder="Name of the Idea...">
+      </div>
+      <div class="form-group">
+        <label for="idea-description">Idea Description:</label>
+        <textarea id="idea-description" name="idea-description" rows="5" placeholder="Describe your idea..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="idea-category">Category:</label>
+        <select id="idea-category" name="idea-category" required>
+          <option value="">Select category...</option>
+          <option value="Technology">Technology</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Operations">Operations</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+      <div class="form-group" id="other-category-form" style="display: none;">
+        <label for="other-category">Name of the Category:</label>
+        <input type="text" id="other-category" name="other-category">
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<script>function showPopup(event) {
+  event.preventDefault();
+  alert('Submission has been Noted!');
+  window.location.href = "index.html";
+}</script>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 InvenShop. All rights reserved.</p>
+  </div>
+</footer>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://www.instagram.com"><img src="instag.jpeg" alt="Instagram" style="width: 20px;"></a>
+      <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook" style="width: 20px;"></a>
+      <a href="https://www.twitter.com"><img src="x.png" alt="X" style="width: 20px;"></a>
+    </div>
+    <div class="footer-contact">
+      <p>Address: LPU, Jalandher, Punjab, INDIA</p>
+      <p>Phone: +91 9392809071</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const ideaCategorySelect = document.getElementById('idea-category');
+  const otherCategoryForm = document.getElementById('other-category-form');
+  
+  ideaCategorySelect.addEventListener('change', function() {
+    if (this.value === 'Others') {
+      otherCategoryForm.style.display = 'block';
+    } else {
+      otherCategoryForm.style.display = 'none';
+    }
+  });
+  
+  
+</script>
+</body>
+</html>

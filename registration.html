@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Your Website</title>
+  <link rel="stylesheet" href="login.css">
+  
+    <script>
+   function showPopup(event) {
+  event.preventDefault();
+  alert("Registration successful!");
+  window.location.href = "index.html";
+}
+
+    </script>
+  
+</head>
+<body>
+
+<div class="register-container reg">
+  <h2>Register</h2>
+  <form action="register.php" method="post" onsubmit="showPopup(event)">
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="login.html">Login here</a></p>
+</div>
+<footer>
+  <div class="container">
+    <p>&copy; 2024 InvenShop. All rights reserved.</p>
+  </div>
+</footer>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://www.instagram.com"><img src="instag.jpeg" alt="Instagram" style="width: 20px;"></a>
+      <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook" style="width: 20px;"></a>
+      <a href="https://www.twitter.com"><img src="x.png" alt="X" style="width: 20px;"></a>
+    </div>
+    <div class="footer-contact">
+      <p>Address: LPU, Jalandher, Punjab, INDIA</p>
+      <p>Phone: +91 9392809071</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

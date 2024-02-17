@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | InvenShop</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <span id="f"><div class="logo">
+      <a href="index.html"><img src="logo.png" alt="Invenshop Logo"></a>
+    </div>
+  </span>
+    <span id="f"><nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+ 
+      </ul>
+    </nav></span>
+  </div>
+</header>
+
+<section class="contact">
+  <div class="container hell">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to get in touch? Fill out the form below and we'll get back to you as soon as possible.</p>
+    <form action="send_contact.php" method="post" onsubmit="showMessageAndRedirect(event)">
+
+      <div class="input-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 InvenShop. All rights reserved.</p>
+  </div>
+</footer>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://www.instagram.com"><img src="instag.jpeg" alt="Instagram" style="width: 20px;"></a>
+      <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook" style="width: 20px;"></a>
+      <a href="https://www.twitter.com"><img src="x.png" alt="X" style="width: 20px;"></a>
+    </div>
+    <div class="footer-contact">
+      <p>Address: LPU, Jalandher, Punjab, INDIA</p>
+      <p>Phone: +91 9392809071</p>
+    </div>
+  </div>
+</footer>
+<script>
+  function showMessageAndRedirect(event) {
+    event.preventDefault(); // Prevent the form from submitting
+    alert("Your message has been sent!"); // Show the alert
+    window.location.href = "index.html"; // Redirect to index.html
+  }
+  </script>
+  
+</body>
+</html>

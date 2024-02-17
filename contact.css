@@ -1,0 +1,92 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0 20;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #305a8a;
+    color: #fff;
+    padding: 20px 0;
+  }
+  .hell {
+    padding: 0 20rem;
+  }
+  .logo {
+    display: inline-block;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact {
+    padding: 50px 0;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #305a8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #f {
+    display:flexbox;
+    flex-direction: column;
+  }
+  footer {
+    background-color: burlywood;
+    color: #0e1287;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
